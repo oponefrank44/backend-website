@@ -1,0 +1,28 @@
+{
+  "name": "backend-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:server": "nodemon  build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.1",
+    "body-parser": "^2.2.0",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.3",
+    "nodemailer": "^7.0.3",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17"
+  },
+  "description": ""
+}
